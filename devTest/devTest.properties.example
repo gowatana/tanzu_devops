@@ -1,4 +1,4 @@
 #JDBC接続URL
 JDBC_URL=jdbc:postgresql://dev-db-01.devops.lab:5432/devopsdb
+JDBC_USER =appuser
 JDBC_PASS =pass
-JDBC_USER =sato

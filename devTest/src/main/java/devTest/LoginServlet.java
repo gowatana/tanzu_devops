@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet{
 		String d = this.getServletContext().getInitParameter("directory");
 		
 		if(d == null || d == "") {
-			d = "/opt/tomcat_inst_01/apache-tomcat-8.5.81/conf";
+			d = "/opt/tomcat_inst_01/tomcat/conf";
 		}
 		
 		setDir(d);

@@ -71,6 +71,7 @@ public class LoginServlet extends HttpServlet{
         			errmMessage  = "IDもしくはパスワードに誤りがあります。";
         		}
         	} catch (Exception e) {
+        		errmMessage = "DBの接続に失敗しました。";
         		e.printStackTrace();
         	}finally {
         		if(db != null) {
@@ -80,6 +81,7 @@ public class LoginServlet extends HttpServlet{
         			try {
         				rs.close();
         			} catch (SQLException e) {
+        				errmMessage = "DBのクローズに失敗しました。";
         				e.printStackTrace();
         			}
         		}
@@ -97,7 +99,7 @@ public class LoginServlet extends HttpServlet{
         	request.setAttribute("id", id);
         	request.setAttribute("pass", pass);
 	    	
-	        RequestDispatcher rd = request.getRequestDispatcher("top.jsp");
+	        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 	        rd.forward(request, response);
         }
 	}

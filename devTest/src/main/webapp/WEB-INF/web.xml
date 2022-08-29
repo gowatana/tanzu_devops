@@ -6,7 +6,6 @@
   <display-name>Archetype Created Web Application</display-name>
 	<context-param>
 		<param-name>directory</param-name>
-		<!-- <param-value>/opt/tomcat_inst_01/apache-tomcat-8.5.81/conf</param-value> -->
-		<param-value>C:\tmp</param-value>
+		<param-value>/opt/tomcat_inst_01/tomcat/conf</param-value>
 	</context-param>
 </web-app>
